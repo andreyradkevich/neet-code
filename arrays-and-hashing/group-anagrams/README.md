@@ -2,8 +2,6 @@ Given an array of `strings` strs, group the anagrams together. You can return th
 
 An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
 
-
-
 **Example 1:**
 
 ```
@@ -14,8 +12,22 @@ Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
 **Example 2:**
 
 ```
+Input: strs = [""]
+Output: [[""]]
+```
+
+**Example 3:**
+
+```
 Input: strs = ["a"]
 Output: [["a"]]
+```
+
+**Example 4:**
+
+```
+Input: strs = ["ac", "bb"]
+Output: [["ac"], ["bb"]]
 ```
 
 **Constraints:**
