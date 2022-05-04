@@ -7,11 +7,12 @@ const groupAnagrams = (arr: string[]) => {
   const hash: { [key: number]: string[] } = {};
 
   arr.forEach((str) => {
-    const count: any = Array(26).fill(0);
+    const c: number[] = Array(26).fill(0);
 
     for (let char of str) {
-      count[char.charCodeAt(0) - "a".charCodeAt(0)] += 1;
+      c[char.charCodeAt(0) - "a".charCodeAt(0)] += 1;
     }
+    const count = c.toString();
 
     if (hash[count]) {
       hash[count] = hash[count].concat(str);
